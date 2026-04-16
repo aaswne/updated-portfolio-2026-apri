@@ -1,0 +1,68 @@
+.contact {
+  background: #000;
+  color: #fff;
+  padding: 80px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.contact__container {
+  max-width: 700px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  text-align: center;
+}
+
+/* Label */
+.contact__label {
+  font-size: 0.75rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #666;
+}
+
+/* Title */
+.contact__title {
+  font-size: clamp(2rem, 5vw, 2.6rem);
+  font-weight: 500;
+}
+
+/* Text */
+.contact__text {
+  font-size: 0.9rem;
+  color: #888;
+}
+
+/* List */
+.contact__list {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+
+/* Item */
+.contact__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 0;
+  border-bottom: 1px solid #111;
+  text-decoration: none;
+  color: inherit;
+  font-size: 0.9rem;
+  transition: all 0.25s ease;
+}
+
+.contact__item span:first-child {
+  color: #666;
+}
+
+.contact__item span:last-child {
+  color: #ccc;
+}
+
+.contact__item:hover {
+  opacity: 0.7;
+}
