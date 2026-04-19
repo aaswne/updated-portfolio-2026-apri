@@ -115,7 +115,7 @@ padding-right: 2%;
 @media (max-width: 900px) {
   .navbar {
     top: 12px;
-    width: calc(100% - 20px);
+    width: 90%;
     height: 64px;
     padding: 0 16px;
     border-radius: 18px;
