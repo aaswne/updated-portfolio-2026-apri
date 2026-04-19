@@ -20,7 +20,7 @@ function Contact() {
             Hire Me
           </a>
 
-          <a href="/resume.pdf" className="btn btn--outline" download>
+          <a href="/AswinKrishnaSDE.pdff" className="btn btn--outline" download>
              Resume
           </a>
         </div>
