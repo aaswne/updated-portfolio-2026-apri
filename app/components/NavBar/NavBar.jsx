@@ -25,6 +25,9 @@ export default function Navbar() {
         <Link href="#contact" onClick={() => setMenuOpen(false)}>
           Contact
         </Link>
+        <Link href="./caseStidy">
+
+        </Link>
       </nav>
 
       <button

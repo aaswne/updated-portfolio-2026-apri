@@ -41,7 +41,7 @@ function Projects() {
     <section className="projects" id="projects">
       <div className="projects__container">
 
-        <p className="projects__label">Projects</p>
+        <span className="projects__label">Projects</span>
         <h2 className="projects__title">Selected work.</h2>
 
         <div className="projects__grid">
@@ -58,8 +58,8 @@ function Projects() {
               </div>
 
               <div className="project__content">
-                <h3>{project.title}</h3>
-                <p>{project.description}</p>
+                <h3 className="project__title">{project.title}</h3>
+                <p className="project__desc">{project.description}</p>
 
                 <div className="project__tech">
                   {project.tech.map((item, index) => (

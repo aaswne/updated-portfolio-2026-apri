@@ -1,14 +1,12 @@
-
-
 .navbar {
   position: fixed;
   top: 18px;
   left: 50%;
   transform: translateX(-50%);
-  width: calc(100% - 40px);
-  max-width: 1200px;
+  width: 46%;
   height: 72px;
-   padding: 0 25%;
+padding-left: 2%;
+padding-right: 2%;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -47,7 +45,9 @@
   color: rgba(255, 255, 255, 0.75);
   font-size: 0.98rem;
   font-weight: 500;
-  transition: color 0.25s ease, transform 0.25s ease;
+  transition:
+    color 0.25s ease,
+    transform 0.25s ease;
 }
 
 .navbar__menu a:hover {

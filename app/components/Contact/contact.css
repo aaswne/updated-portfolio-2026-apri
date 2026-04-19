@@ -1,68 +1,66 @@
 .contact {
-  background: #000;
+  background: #0a0a0a;
   color: #fff;
-  padding: 80px 20px;
-  display: flex;
-  justify-content: center;
+  padding: 5rem 2rem;
 }
 
 .contact__container {
-  max-width: 700px;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  gap: 28px;
-  text-align: center;
+  max-width: 900px;
+  margin: 0 auto;
 }
 
 /* Label */
 .contact__label {
   font-size: 0.75rem;
-  letter-spacing: 2px;
+  letter-spacing: 0.15em;
   text-transform: uppercase;
-  color: #666;
+  color: #888;
+  margin-bottom: 0.5rem;
+  display: inline-block;
 }
 
 /* Title */
 .contact__title {
-  font-size: clamp(2rem, 5vw, 2.6rem);
-  font-weight: 500;
+  font-size: clamp(2rem, 5vw, 3rem);
+  font-weight: 600;
+  margin-bottom: 1rem;
 }
 
 /* Text */
 .contact__text {
-  font-size: 0.9rem;
-  color: #888;
+  font-size: 1rem;
+  color: #aaa;
+  max-width: 500px;
+  line-height: 1.6;
+  margin-bottom: 2rem;
 }
 
-/* List */
-.contact__list {
+/* Buttons (reuse same style as hero) */
+.contact__actions {
   display: flex;
-  flex-direction: column;
-  margin-top: 10px;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
 }
 
-/* Item */
-.contact__item {
+/* Meta tags */
+.contact__meta {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 16px 0;
-  border-bottom: 1px solid #111;
-  text-decoration: none;
-  color: inherit;
-  font-size: 0.9rem;
-  transition: all 0.25s ease;
+  gap: 0.6rem;
+  flex-wrap: wrap;
 }
 
-.contact__item span:first-child {
-  color: #666;
-}
-
-.contact__item span:last-child {
+.contact__meta span {
+  font-size: 0.75rem;
+  padding: 0.3rem 0.7rem;
+  border: 1px solid #333;
+  border-radius: 999px;
   color: #ccc;
 }
 
-.contact__item:hover {
-  opacity: 0.7;
+/* Mobile */
+@media (max-width: 600px) {
+  .contact__text {
+    font-size: 0.95rem;
+  }
 }

@@ -5,41 +5,28 @@ function Contact() {
     <section className="contact" id="contact">
       <div className="contact__container">
 
-        <p className="contact__label">Contact</p>
+        <span className="contact__label">Contact</span>
 
         <h2 className="contact__title">
-          Get in touch.
+          Let’s build something great together.
         </h2>
 
         <p className="contact__text">
-          Available for projects and opportunities.
+          Available for On-site and Remote frontend roles.
         </p>
 
-        <div className="contact__list">
-          <a href="mailto:yourmail@example.com" className="contact__item">
-            <span>Email</span>
-            <span>yourmail@example.com</span>
+        <div className="contact__actions">
+          <a href="mailto:ashhwin041@gmail.com" className="btn btn--primary">
+            Hire Me
           </a>
 
-          <a
-            href="https://linkedin.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="contact__item"
-          >
-            <span>LinkedIn</span>
-            <span>Profile</span>
+          <a href="/resume.pdf" className="btn btn--outline" download>
+             Resume
           </a>
+        </div>
 
-          <a
-            href="https://github.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="contact__item"
-          >
-            <span>GitHub</span>
-            <span>Projects</span>
-          </a>
+        <div className="contact__meta">
+          <span>Based in India</span>
         </div>
 
       </div>

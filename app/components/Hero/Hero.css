@@ -1,92 +1,86 @@
+/* Section */
 .hero {
-  background: #000;
+  background: #0a0a0a;
   color: #fff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 40px 20px;
+  padding: 5rem 2rem;
+  margin-top: 90px;
 }
 
 .hero__container {
-  max-width: 700px;
-  width: 100%;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
+  max-width: 1100px;
+  margin: 0 auto;
 }
 
-/* Small label (matches footer/projects) */
+/* Label */
 .hero__label {
   font-size: 0.75rem;
-  letter-spacing: 2px;
+  letter-spacing: 0.15em;
   text-transform: uppercase;
-  color: #666;
+  color: #888;
+  margin-bottom: 0.5rem;
+  display: inline-block;
 }
 
 /* Title */
 .hero__title {
-  font-size: clamp(2.5rem, 6vw, 4.5rem);
-  font-weight: 500;
-  line-height: 1.1;
-  letter-spacing: -1px;
+  font-size: clamp(2.5rem, 6vw, 4rem);
+  font-weight: 600;
+  line-height: 1.2;
+  margin-bottom: 1rem;
 }
 
 /* Description */
 .hero__description {
-  font-size: 0.95rem;
-  color: #888;
+  font-size: 1rem;
+  color: #aaa;
+  max-width: 600px;
   line-height: 1.6;
-  max-width: 520px;
-  margin: 0 auto;
+  margin-bottom: 2rem;
 }
 
 /* Buttons */
 .hero__actions {
   display: flex;
-  justify-content: center;
-  gap: 12px;
-  margin-top: 10px;
+  flex-wrap: wrap;
+  gap: 1rem;
 }
 
-.hero__btn {
-  padding: 10px 18px;
-  border-radius: 999px;
-  border: 1px solid #222;
-  text-decoration: none;
+/* Buttons base */
+.btn {
   font-size: 0.85rem;
-  color: #ccc;
-  transition: all 0.25s ease;
-}
-
-.hero__btn:hover {
-  color: #fff;
-  border-color: #444;
+  padding: 0.6rem 1.4rem;
+  border-radius: 999px;
+  text-decoration: none;
+  transition: all 0.3s ease;
 }
 
 /* Primary */
-.hero__btn.primary {
+.btn--primary {
   background: #fff;
   color: #000;
-  border: none;
 }
 
-.hero__btn.primary:hover {
-  opacity: 0.9;
+.btn--primary:hover {
+  background: #e5e5e5;
 }
 
-/* Mobile */
-@media (max-width: 786px) {
-  .hero__title {
-    font-size: clamp(2rem, 10vw, 3rem);
+/* Outline */
+.btn--outline {
+  border: 1px solid #333;
+  color: #fff;
+}
+
+.btn--outline:hover {
+  border-color: #fff;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .hero {
+    padding: 4rem 1.5rem;
   }
 
   .hero__description {
-    font-size: 0.9rem;
+    font-size: 0.95rem;
   }
-
-  .hero{
-    padding-top: 40%;
-  }
-
 }

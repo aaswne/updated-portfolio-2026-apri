@@ -4,34 +4,26 @@ function Articles() {
   const articles = [
     {
       id: 1,
-      title: "Understanding React Hooks",
+      title: "How I Built a JSON to XML & CSV Converting Tool Using Next.js",
       description:
-        "A simple guide to useState, useEffect, and how hooks improve your React code.",
-      date: "Aug 2025",
-      link: "#",
+        "Building a simple tool to convert JSON into XML and CSV.",
+      date: "April 15",
+      link: "https://medium.com/@ashhwin041/appphow-i-built-a-json-to-xml-csv-converter-using-next-js-4ceafbe02480",
     },
     {
       id: 2,
-      title: "CSS Layouts Made Easy",
+      title: "Building Samsara AI: My First AI Chat Web Application",
       description:
-        "Learn Flexbox and Grid with real examples to build responsive layouts.",
-      date: "Jul 2025",
-      link: "#",
-    },
-    {
-      id: 3,
-      title: "Building Clean UI Components",
-      description:
-        "How to structure reusable components for scalable frontend projects.",
-      date: "Jun 2025",
-      link: "#",
+        "How I built an AI chat app using Next.js and Firebase while improving my frontend skills.",
+      date: "Mar 14",
+      link: "https://medium.com/@ashhwin041/building-samsara-ai-my-first-ai-chat-web-application-with-next-js-and-firebase-106b1a510fa2",
     },
   ];
 
   return (
     <section className="articles" id="articles">
       <div className="articles__container">
-        <p className="articles__label">Articles</p>
+        <span className="articles__label">Articles</span>
         <h2 className="articles__title">Writing & notes.</h2>
 
         <div className="articles__list">
@@ -48,11 +40,11 @@ function Articles() {
               </div>
 
               <div className="article__content">
-                <h3>{article.title}</h3>
-                <p>{article.description}</p>
+                <h3 className="article__title">{article.title}</h3>
+                <p className="article__description">{article.description}</p>
               </div>
 
-              <span className="article__arrow">→</span>
+              <span className="article__arrow">↗</span>
             </a>
           ))}
         </div>

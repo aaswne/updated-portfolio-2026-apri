@@ -1,0 +1,90 @@
+.skills {
+  background: #0a0a0a;
+  color: #fff;
+  padding: 5rem 2rem;
+}
+
+.skills__container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.skills__label {
+  font-size: 0.75rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: #888;
+  margin-bottom: 0.5rem;
+  display: inline-block;
+}
+
+.skills__title {
+  font-size: clamp(2rem, 5vw, 3rem);
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.skills__text {
+  font-size: 1rem;
+  color: #aaa;
+  max-width: 560px;
+  line-height: 1.6;
+  margin-bottom: 2.5rem;
+}
+
+.skills__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1rem;
+}
+
+.skills__card {
+  background: #111;
+  border: 1px solid #1f1f1f;
+  border-radius: 18px;
+  padding: 1.25rem;
+  transition: all 0.3s ease;
+}
+
+.skills__card:hover {
+  border-color: #333;
+  transform: translateY(-4px);
+}
+
+.skills__card-title {
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+  color: #fff;
+}
+
+.skills__tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+}
+
+.skills__tag {
+  font-size: 0.75rem;
+  padding: 0.32rem 0.75rem;
+  border: 1px solid #333;
+  border-radius: 999px;
+  color: #ccc;
+  background: #0d0d0d;
+  transition: all 0.3s ease;
+}
+
+.skills__tag:hover {
+  border-color: #555;
+  color: #fff;
+}
+
+@media (max-width: 600px) {
+  .skills {
+    padding: 5rem 1.5rem;
+  }
+
+  .skills__text {
+    font-size: 0.95rem;
+  }
+}
