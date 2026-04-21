@@ -43,6 +43,7 @@
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
+  
 }
 
 /* Buttons base */
@@ -82,5 +83,10 @@
 
   .hero__description {
     font-size: 0.95rem;
+  }
+
+  .hero__actions{
+        justify-content: center;
+
   }
 }
