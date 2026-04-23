@@ -3,6 +3,8 @@
   color: #fff;
   padding: 4rem 2rem 2rem;
   border-top: 1px solid #1a1a1a;
+    scroll-behavior: smooth;
+
 }
 
 .footer__container {

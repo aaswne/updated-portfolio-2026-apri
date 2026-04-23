@@ -2,6 +2,8 @@
   background: #0a0a0a;
   color: #fff;
   padding: 5rem 2rem;
+    scroll-behavior: smooth;
+
 }
 
 .articles__container {

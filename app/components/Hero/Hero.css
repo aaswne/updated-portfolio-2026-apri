@@ -4,6 +4,8 @@
   color: #fff;
   padding: 5rem 2rem;
   margin-top: 90px;
+    scroll-behavior: smooth;
+
 }
 
 .hero__container {

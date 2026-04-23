@@ -2,8 +2,12 @@
 import { useState } from "react";
 import Link from "next/link";
 import "./NavBar.css";
+import { CiSun } from "react-icons/ci";
+import { IoIosMoon } from "react-icons/io";
 
-export default function Navbar() {
+
+
+export default function Navbar({handleClick,darkmode}) {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
@@ -28,6 +32,7 @@ export default function Navbar() {
         <Link href="./caseStudy">
 Case Study 
         </Link>
+        <button  onClick={handleClick} className="button" >{darkmode?<CiSun className="icons" />:<IoIosMoon className="icons" />}</button>
       </nav>
 
       <button

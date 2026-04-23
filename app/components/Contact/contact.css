@@ -2,6 +2,7 @@
   background: #0a0a0a;
   color: #fff;
   padding: 5rem 2rem;
+  scroll-behavior: smooth;
 }
 
 .contact__container {
