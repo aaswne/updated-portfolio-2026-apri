@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 import "./projects.css";
 
 function Projects() {
@@ -38,7 +38,7 @@ function Projects() {
   ];
 
   return (
-    <section className="projects" id="projects">
+    <section className="projects"  id="projects">
       <div className="projects__container">
 
         <span className="projects__label">Projects</span>

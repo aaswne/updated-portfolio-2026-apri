@@ -1,6 +1,7 @@
 import "./Hero.css";
 import Link from "next/link";
 function Hero() {
+ 
   return (
     <section className="hero" id="home">
       <div className="hero__container">
