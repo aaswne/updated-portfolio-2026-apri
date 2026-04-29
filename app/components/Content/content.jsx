@@ -11,39 +11,39 @@ export default function Content() {
           <div className="about-copy">
             <p>
               I&apos;m <strong>Aswin Krishna T</strong>, a frontend developer
-              based in India with a sharp focus on crafting scalable,
-              user-first web applications using <strong>React</strong> and{" "}
+              based in India, focused on building clean and scalable web
+              applications using <strong>React</strong> and{" "}
               <strong>Next.js</strong>.
             </p>
 
             <p>
-              I care deeply about the intersection of{" "}
-              <strong>design and engineering</strong> — writing clean,
-              maintainable code that doesn&apos;t just work, but feels right to
-              use.
+              I enjoy working at the intersection of{" "}
+              <strong>design and engineering</strong> — writing code that is not
+              only maintainable, but also delivers a smooth and intuitive user
+              experience.
             </p>
 
             <p>
-              When I&apos;m not building, I write about the things I learn —
-              because teaching something is the best way to understand it.
+              I also share what I learn through writing, which helps me deepen my
+              understanding and communicate ideas more clearly.
             </p>
 
             <div className="about-stats">
               <div className="stat-cell">
                 <div className="stat-number">4+</div>
-                <div className="stat-label">Shipped Projects</div>
+                <div className="stat-label">Personal Projects</div>
               </div>
               <div className="stat-cell">
                 <div className="stat-number">2</div>
                 <div className="stat-label">Technical Articles</div>
               </div>
               <div className="stat-cell">
-                <div className="stat-number">3+</div>
-                <div className="stat-label">Years in React</div>
+                <div className="stat-number">1+</div>
+                <div className="stat-label">Years Learning React</div>
               </div>
               <div className="stat-cell">
                 <div className="stat-number">∞</div>
-                <div className="stat-label">Problems Enjoyed</div>
+                <div className="stat-label">Problems Explored</div>
               </div>
             </div>
           </div>
@@ -53,34 +53,36 @@ export default function Content() {
               <li>
                 <span className="val-icon">01</span>
                 <div>
-                  <strong>Performance-first mindset</strong>
-                  I ship fast. Lazy loading, code splitting, and Lighthouse
-                  scores are part of my process.
+                  <strong>Performance-focused</strong>
+                  I focus on building fast and efficient applications using
+                  techniques like lazy loading and code splitting.
                 </div>
               </li>
 
               <li>
                 <span className="val-icon">02</span>
                 <div>
-                  <strong>Design sensibility</strong>
-                  Pixel-perfect implementations that match intent, not just
-                  specs.
+                  <strong>Design awareness</strong>
+                  I aim for clean, consistent UI that aligns with user intent
+                  and usability.
                 </div>
               </li>
 
               <li>
                 <span className="val-icon">03</span>
                 <div>
-                  <strong>AI-native builder</strong>
-                  I integrate LLMs and APIs pragmatically into real products.
+                  <strong>Modern development approach</strong>
+                  I work with APIs and modern tools to build practical,
+                  real-world applications.
                 </div>
               </li>
 
               <li>
                 <span className="val-icon">04</span>
                 <div>
-                  <strong>Clear communicator</strong>
-                  I write, document, and explain so teams can work better.
+                  <strong>Clear communication</strong>
+                  I document my work and share knowledge to improve collaboration
+                  and learning.
                 </div>
               </li>
             </ul>
@@ -102,8 +104,8 @@ export default function Content() {
             <div className="article-date">April 15, 2025</div>
             <h3>How I Built a JSON to XML & CSV Converter Using Next.js</h3>
             <p>
-              A behind-the-scenes look at designing and shipping a developer
-              utility tool.
+              A walkthrough of building a developer utility tool and the
+              decisions behind its design and implementation.
             </p>
             <div className="article-link">Read on Medium ↗</div>
           </a>
@@ -117,8 +119,8 @@ export default function Content() {
             <div className="article-date">March 14, 2025</div>
             <h3>Building Samsara AI: My First AI Chat Application</h3>
             <p>
-              How I designed and shipped an AI-powered chat platform with
-              Next.js and Firebase.
+              A breakdown of how I built an AI chat application using Next.js,
+              Firebase, and external APIs.
             </p>
             <div className="article-link">Read on Medium ↗</div>
           </a>
