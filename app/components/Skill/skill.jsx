@@ -1,64 +1,88 @@
 import "./skill.css";
 
-function Skills() {
-  const skillGroups = [
-    {
-      title: "Programming Languages",
-      items: ["JavaScript", "TypeScript (Basic)", "C"],
-    },
-    {
-      title: "Frontend",
-      items: ["HTML", "CSS", "React", "Next.js", "Responsive Design"],
-    },
-    {
-      title: "Styling",
-      items: ["Tailwind CSS", "CSS Modules", "UI/UX ","Bootstrap"],
-    },
-    {
-      title: "AI & APIs",
-      items: ["OpenAI API", "AI Integration", "REST API"],
-    },
-    {
-      title: "Backend Services",
-      items: ["Firebase", "Firestore"],
-    },
-    {
-      title: "Deployment & Tools",
-      items: ["Git", "GitHub", "Vercel", "Netlify"],
-    },
-  ];
+const skillGroups = [
+  {
+    title: "Core Languages",
+    skills: [
+      ["JavaScript (ES2024)", "92%"],
+      ["TypeScript", "58%"],
+      ["HTML5 / CSS3", "95%"],
+    ],
+  },
+  {
+    title: "Frameworks & Libraries",
+    skills: [
+      ["React", "90%"],
+      ["Next.js", "78%"],
+      ["Tailwind CSS", "88%"],
+    ],
+  },
+  {
+    title: "Backend & Cloud",
+    skills: [
+      ["Firebase / Firestore", "82%"],
+      ["REST APIs", "85%"],
+      ["Node.js", "55%"],
+    ],
+  },
+  {
+    title: "AI & Integrations",
+    skills: [
+      ["OpenAI API", "80%"],
+      ["AI App Architecture", "72%"],
+      ["Prompt Engineering", "70%"],
+    ],
+  },
+  {
+    title: "Tooling & DevOps",
+    skills: [
+      ["Git / GitHub", "87%"],
+      ["Vercel / Netlify", "90%"],
+      ["Vite / Webpack", "65%"],
+    ],
+  },
+  {
+    title: "Currently Growing",
+    skills: [
+      ["TypeScript (advancing)", "58%"],
+      ["Testing (Jest / RTL)", "40%"],
+      ["System Design", "50%"],
+    ],
+  },
+];
 
+export default function Skill() {
   return (
-    <section className="skills" id="skills">
-      <div className="skills__container">
+    <section id="skills">
+      <div className="section-label">03 — Skills</div>
+      <h2 className="section-title">What I bring<br />to your team.</h2>
 
-        <span className="skills__label">Skills</span>
+      <div className="skills-grid">
+        {skillGroups.map((group) => (
+          <div className="skill-group" key={group.title}>
+            <div className="skill-group-title">{group.title}</div>
 
-        <h2 className="skills__title">Tools I use to build products.</h2>
+            <div className="skill-items">
+              {group.skills.map(([name, percent]) => (
+                <div className="skill-row" key={name}>
+                  <span className="skill-name">{name}</span>
 
-        <p className="skills__text">
-          A focused set of programming languages, frontend technologies, and tools I use to build modern web applications.
-        </p>
+                  <div className="skill-bar-track">
+                    <div
+                      className="skill-bar-fill"
+                      style={{ width: percent }}
+                    ></div>
+                  </div>
 
-        <div className="skills__grid">
-          {skillGroups.map((group, index) => (
-            <div className="skills__card" key={index}>
-              <h3 className="skills__card-title">{group.title}</h3>
-
-              <div className="skills__tags">
-                {group.items.map((item, i) => (
-                  <span className="skills__tag" key={i}>
-                    {item}
+                  <span className="skill-pct">
+                    {group.title === "Currently Growing" ? "↑" : percent}
                   </span>
-                ))}
-              </div>
+                </div>
+              ))}
             </div>
-          ))}
-        </div>
-
+          </div>
+        ))}
       </div>
     </section>
   );
 }
-
-export default Skills;
