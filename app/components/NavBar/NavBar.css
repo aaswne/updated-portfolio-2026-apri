@@ -51,3 +51,9 @@
   background: var(--accent);
   color: black;
 }
+
+@media (max-width:700px) {
+  .nav__links{
+    display: none; }
+  
+}
