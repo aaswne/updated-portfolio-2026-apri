@@ -28,7 +28,7 @@ export default function Hero() {
         <div className="hero-actions">
           <a href="#projects" className="btn-primary">View My Work →</a>
           <a
-            href="https://aswinkrishna.in/AswinKrishnaSDE.pdf"
+            href="https://aswinkrishna.in/ASWIN KRISHNA SDE FRONTEND.pdf"
             target="_blank"
             rel="noreferrer"
             className="btn-ghost"
